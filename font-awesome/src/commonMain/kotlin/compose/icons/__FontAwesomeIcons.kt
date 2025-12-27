@@ -20,7 +20,7 @@ public val FontAwesomeIcons.AllIcons: ____KtList<ImageVector>
     if (__AllIcons != null) {
       return __AllIcons!!
     }
-    __AllIcons= Brands.AllIcons + Regular.AllIcons + Solid.AllIcons + listOf()
+    __AllIcons= Solid.AllIcons + Regular.AllIcons + Brands.AllIcons + listOf()
     return __AllIcons!!
   }
 
@@ -31,8 +31,8 @@ public val FontAwesomeIcons.AllIconsNamed: ____KtMap<String, ImageVector>
     if (__AllIconsNamed != null) {
       return __AllIconsNamed!!
     }
-    __AllIconsNamed= Brands.AllIconsNamed.mapKeys { "${Brands.groupName}.${it.key}"} +
+    __AllIconsNamed= Solid.AllIconsNamed.mapKeys { "${Solid.groupName}.${it.key}"} +
         Regular.AllIconsNamed.mapKeys { "${Regular.groupName}.${it.key}"} +
-        Solid.AllIconsNamed.mapKeys { "${Solid.groupName}.${it.key}"} + mapOf()
+        Brands.AllIconsNamed.mapKeys { "${Brands.groupName}.${it.key}"} + mapOf()
     return __AllIconsNamed!!
   }

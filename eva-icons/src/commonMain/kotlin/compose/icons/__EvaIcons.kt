@@ -19,7 +19,7 @@ public val EvaIcons.AllIcons: ____KtList<ImageVector>
     if (__AllIcons != null) {
       return __AllIcons!!
     }
-    __AllIcons= Fill.AllIcons + Outline.AllIcons + listOf()
+    __AllIcons= Outline.AllIcons + Fill.AllIcons + listOf()
     return __AllIcons!!
   }
 
@@ -30,7 +30,7 @@ public val EvaIcons.AllIconsNamed: ____KtMap<String, ImageVector>
     if (__AllIconsNamed != null) {
       return __AllIconsNamed!!
     }
-    __AllIconsNamed= Fill.AllIconsNamed.mapKeys { "${Fill.groupName}.${it.key}"} +
-        Outline.AllIconsNamed.mapKeys { "${Outline.groupName}.${it.key}"} + mapOf()
+    __AllIconsNamed= Outline.AllIconsNamed.mapKeys { "${Outline.groupName}.${it.key}"} +
+        Fill.AllIconsNamed.mapKeys { "${Fill.groupName}.${it.key}"} + mapOf()
     return __AllIconsNamed!!
   }

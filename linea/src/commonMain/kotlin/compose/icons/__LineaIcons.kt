@@ -24,8 +24,8 @@ public val LineaIcons.AllIcons: ____KtList<ImageVector>
     if (__AllIcons != null) {
       return __AllIcons!!
     }
-    __AllIcons= Music.AllIcons + Ecommerce.AllIcons + Basic.AllIcons + Software.AllIcons +
-        Weather.AllIcons + Arrows.AllIcons + BasicElaboration.AllIcons + listOf()
+    __AllIcons= Arrows.AllIcons + Basic.AllIcons + BasicElaboration.AllIcons + Ecommerce.AllIcons +
+        Music.AllIcons + Software.AllIcons + Weather.AllIcons + listOf()
     return __AllIcons!!
   }
 
@@ -36,13 +36,12 @@ public val LineaIcons.AllIconsNamed: ____KtMap<String, ImageVector>
     if (__AllIconsNamed != null) {
       return __AllIconsNamed!!
     }
-    __AllIconsNamed= Music.AllIconsNamed.mapKeys { "${Music.groupName}.${it.key}"} +
-        Ecommerce.AllIconsNamed.mapKeys { "${Ecommerce.groupName}.${it.key}"} +
+    __AllIconsNamed= Arrows.AllIconsNamed.mapKeys { "${Arrows.groupName}.${it.key}"} +
         Basic.AllIconsNamed.mapKeys { "${Basic.groupName}.${it.key}"} +
-        Software.AllIconsNamed.mapKeys { "${Software.groupName}.${it.key}"} +
-        Weather.AllIconsNamed.mapKeys { "${Weather.groupName}.${it.key}"} +
-        Arrows.AllIconsNamed.mapKeys { "${Arrows.groupName}.${it.key}"} +
         BasicElaboration.AllIconsNamed.mapKeys { "${BasicElaboration.groupName}.${it.key}"} +
-        mapOf()
+        Ecommerce.AllIconsNamed.mapKeys { "${Ecommerce.groupName}.${it.key}"} +
+        Music.AllIconsNamed.mapKeys { "${Music.groupName}.${it.key}"} +
+        Software.AllIconsNamed.mapKeys { "${Software.groupName}.${it.key}"} +
+        Weather.AllIconsNamed.mapKeys { "${Weather.groupName}.${it.key}"} + mapOf()
     return __AllIconsNamed!!
   }
